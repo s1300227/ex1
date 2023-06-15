@@ -10,7 +10,7 @@ int main(){
    printf("Hello, %s!\n",name);
   
   srand((unsigned int)time(NULL));
-  printf("Rolling dice. . .\n");
+  printf("Rolling the dice. . .\n");
   for(int i=0;i<2;i++){
     num = rand()%6+1;
     printf("Die %d: %d\n",i+1,num);
@@ -18,7 +18,7 @@ int main(){
   }
   printf("Total value: %d\n",sum);
   if(sum>7)
-    printf("You won\n");
-  else printf("You lost\n");
+    printf("%s won!\n",name);
+  else printf("%s lost!\n",name);
   return 0;
 }
